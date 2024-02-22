@@ -23,6 +23,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "primary")
 public class Primary {
+	private Integer employeeId;
 	private String employeeName;
 	private LocalDate dateOfJoining;
 	private LocalDate birthDate;
@@ -32,6 +33,5 @@ public class Primary {
 	private BloodGroup bloodGroupType;
 	private String nationality;
 	private EmployeeStatus status;
-	
-	
+
 }
