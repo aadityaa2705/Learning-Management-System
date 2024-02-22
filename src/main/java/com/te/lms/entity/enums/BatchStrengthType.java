@@ -1,5 +1,5 @@
 package com.te.lms.entity.enums;
 
-public enum EducationType {
+public enum BatchStrengthType {
 
 }
