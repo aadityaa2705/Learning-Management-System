@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.te.lms.entity.enums.MaritalStatus;
+import com.te.lms.enums.MaritalStatus;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,7 +20,7 @@ import lombok.Setter;
 @Setter
 @Builder
 @Entity
-@Table(name = "employee_secondary")
+@Table(name = "secondary")
 public class Secondary {
 	@Column(name = "secondary_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

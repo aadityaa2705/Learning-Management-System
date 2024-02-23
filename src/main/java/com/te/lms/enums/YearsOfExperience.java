@@ -1,4 +1,4 @@
-package com.te.lms.entity.enums;
+package com.te.lms.enums;
 
 public enum YearsOfExperience {
 	ONE(1),

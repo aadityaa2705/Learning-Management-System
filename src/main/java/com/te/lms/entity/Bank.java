@@ -2,12 +2,14 @@ package com.te.lms.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.te.lms.entity.enums.AccountType;
+import com.te.lms.enums.AccountType;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -31,6 +33,7 @@ public class Bank {
 	@Column(name = "account_number")
 	private String accountNumber;
 	@Column(name = "account_type")
+	@Enumerated(EnumType.STRING)
 	private AccountType accountType;
 	@Column(name = "bank_account")
 	private String bankAccount;

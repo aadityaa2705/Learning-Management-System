@@ -18,7 +18,7 @@ import lombok.Setter;
 @Setter
 @Builder
 @Entity
-@Table(name = "employee_attendence")
+@Table(name = "attendence")
 public class EmployeeAttendence {
 	@Column(name = "attendence_id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

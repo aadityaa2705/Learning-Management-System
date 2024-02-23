@@ -2,10 +2,13 @@ package com.te.lms.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.te.lms.entity.enums.SkillRating;
-import com.te.lms.entity.enums.YearsOfExperience;
+import com.te.lms.enums.SkillRating;
+import com.te.lms.enums.YearsOfExperience;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -22,6 +25,8 @@ import lombok.Setter;
 @Table(name = "technical_skill")
 public class TechnicalSkill {
 	@Column(name = "skill_id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id
 	private Integer skillId;
 	@Column(name = "skill_type")
 	private String skillType;
